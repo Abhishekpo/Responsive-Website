@@ -1,0 +1,49 @@
+/* navbar  */
+
+
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    padding:1px 1px;
+    font-size: 1rem; 
+ }
+ #navbar ul li{
+    margin:15px 3px;
+}
+#navbar img{
+    height:70px;
+    margin:5px 10px;
+}
+
+
+
+/* Home section */
+
+#home h1{
+    font-size: 1.5rem;
+    text-align: center;
+}
+#home p{
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+/* services section */
+#div1{
+    flex-direction: column;
+}
+
+/* client section  */
+#client{
+   
+    height:300px;
+ }
+#clientdiv{
+    flex-wrap: wrap;
+}
+
+/* Contact section  */
+
+/* Footer  */

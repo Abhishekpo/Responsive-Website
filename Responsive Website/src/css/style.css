@@ -1,0 +1,243 @@
+/* CSS Reset */
+*{
+    margin:0px;
+    padding:0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*css variables*/
+:root{
+    --nabvbar-height:59px;
+}
+   #navbar{
+    display:flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+#logo img{
+    height:60px;
+    margin:3px 6px;
+}
+#navbar ul {
+    display:flex;
+}
+#navbar ul li{
+    list-style: none;
+    margin:20px 40px;
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.3rem;
+    
+}
+
+#navbar ul li a{
+   display:block;
+   color:white;
+   padding:3px 2px; 
+   border-radius: 8px;
+   text-decoration: none;
+  
+}
+#navbar ul li a:hover{
+   /* background-color:aqua; */
+   color: black;
+   background-color: gray;
+   cursor: pointer;
+}
+
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    height:532px;
+    padding-left: 33px;
+  
+}
+#home::before{
+    content: "";
+    background: url(../../img/bg.jpg) no-repeat center center/cover;
+    position:absolute;
+    height:642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#home h1{
+    font-size: 3rem;
+    color:white;
+    font-family: 'Baloo 2', cursive;
+}
+#home p{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+#home button{
+    color:black;
+    border-radius: 2px;
+    margin:12px;
+    font-family: 'Baloo 2', cursive;
+    padding: 5px 5px;
+    border: 2px solid red;
+    border-radius: 7px;
+    font-size: 1rem;
+}
+#home button:hover{
+    color:white;
+    background: black;
+    cursor: pointer;
+}
+
+/*  Service section*/
+#section1 div{
+    display:flex;
+    align-items:center;
+
+}
+#section1 img{
+    height :120px;
+}
+#section1 .divinside{
+   display:flex;
+   align-items: center; 
+   flex-direction: column;
+   border:2px solid red;
+   padding:10px 10px;
+   margin:10px;
+   background:rgb(255, 251, 251);
+   border-radius: 20px;
+   font-family: 'Baloo 2', cursive;
+}
+.heading1{
+    text-align:center;
+    margin-bottom: -7px;
+    padding:35px;
+    font-family:'Baloo 2', cursive;
+    font-size: 2rem;
+}
+
+.divinside h3{
+    font-size: 1.5rem;
+}
+.divinside p{
+  text-align: center;
+  padding: 4px 4px;
+}
+
+/* Client Sections */
+#client{
+   position:relative;
+   height:200px;
+   width:100%;
+}
+#clientdiv{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#clientdiv::before{
+    content:"";
+    background: url('../../img/bg1.jpg') no-repeat center center/cover;
+    position:absolute;
+    height: 100%;
+    width:100%;
+    top:3px;
+    z-index: -1;
+    opacity: 1;
+}
+#client h1{
+    color:white;
+    font-family: 'Baloo 2', cursive;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#clientdiv img{
+    height:70px;
+    margin:30px 7px;
+    
+}
+
+/* Contact us Sections */
+#ContactUS{
+    position:relative;
+    margin-top: 12px;
+
+}
+#ContactUS:before{
+    content:"";
+    background:url('../../img/contact.jpg') no-repeat center center/cover;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#contactdiv{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#contactheading{
+    text-align: center;
+    margin-bottom: 3px;
+    font-family: 'Baloo 2', cursive;
+}
+
+.contact1 label{
+    font-size: 1.2rem;
+}
+
+.contact1 {
+    margin:12px 12px;
+}
+.contact1 input,.contact1 textarea{
+    width:100%;
+    padding:2px;
+    border-radius: 15px;
+    font-family: 'Baloo 2', cursive;
+  
+}
+#contactheading form{
+  width:40%;
+}
+#contactdiv button{
+    display:block;
+    margin: auto;
+    padding:2px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-family: 'Baloo 2', cursive;
+    
+}
+#contactdiv button:hover{
+    background-color: black;
+    color:white;
+}
+
+footer{
+    background-color: black;
+    color:white;
+    text-align: center;
+    
+
+}
+
+
+
+
